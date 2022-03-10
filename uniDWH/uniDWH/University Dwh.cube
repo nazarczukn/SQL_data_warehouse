@@ -1,0 +1,417 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6dda8316-59aa-427a-811b-21719295d417" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>University Dwh</ID>
+  <Name>University Dwh</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="c28a04ac-34bf-45e7-83f7-5984e697a7bd">
+      <ID>Transcript Fact</ID>
+      <Name>Transcript Fact</Name>
+      <DimensionID>Transcript Fact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="cc5b9096-8fa7-4307-8124-a9703bdac25b">
+          <AttributeID>Fact Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c163f33e-ca21-4305-b2d8-b48e288121d1">
+          <AttributeID>Student ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c51346c6-f9e4-49dd-bcbb-4d653e92e1e2">
+          <AttributeID>Course ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8dc236bf-e2f3-40f2-9923-137c1939fffa">
+          <AttributeID>Teacher ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9e908cff-d443-46a3-9eb1-8b390afc2178">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="737ce16a-2afc-4663-a3c6-9374511aa27d">
+      <ID>Student</ID>
+      <Name>Student</Name>
+      <DimensionID>Student</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3ba9c1b5-127a-49b2-9707-75e80975aca4">
+          <AttributeID>Student ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="754427a8-6a3e-4000-b538-59f82cdd6bc6">
+          <AttributeID>Department Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca956551-4f7a-43df-bdc2-16d81a1b4d8a">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e542ba04-e03b-44a5-a113-f44581046216">
+          <AttributeID>Surname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="693ccda5-7126-45aa-90e5-481fb07c9cfd">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8dfba1c5-6c0c-4342-a0f2-124d13560c0d">
+          <AttributeID>Phone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe31b9c8-a1ff-47a4-bd2a-7708a4742bd9">
+          <AttributeID>Email</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5a52df3a-ce7c-4aad-ae35-7c55056ade17">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="eac8c940-a95b-43ef-9cf1-51d08a7f9fdc">
+      <ID>Course</ID>
+      <Name>Course</Name>
+      <DimensionID>Course</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d21c0eef-f55e-468e-9cac-d61d273c509a">
+          <AttributeID>Course ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3d8c0a0-cf89-4ffd-83ab-a4b414f0667f">
+          <AttributeID>Course Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f31329f7-ee79-4294-a41d-44aac23d7070">
+          <AttributeID>Department Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b227d15-bdcb-4d75-a553-e363b83caad7">
+          <AttributeID>Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="0b483231-9fda-4e4e-9d16-6b025e9b49e6">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="14a94dca-ef93-4740-af10-0447d9cc03ef">
+      <ID>Teacher</ID>
+      <Name>Teacher</Name>
+      <DimensionID>Teacher</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="31fc3444-19c5-4f5a-bc9e-a0b01171ae8c">
+          <AttributeID>Teacher ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="635b3f1e-2dbc-47f1-810e-23b9433ac1c1">
+          <AttributeID>Department Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="473497b5-81bb-4023-b497-139d909390d5">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="90802585-32c8-44f8-9931-2601a1fe34b0">
+          <AttributeID>Surname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7460db1e-f91c-4ae7-8748-fc8e49ea053c">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="27be1c6b-3ad2-46eb-9b08-49d2babda637">
+          <AttributeID>Phone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="856e2727-1b61-40e0-aef3-b26a756327b6">
+          <AttributeID>Email</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="79d383fc-55d5-46c9-b680-cdd02f7d280b">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="9102fcea-2afe-43a4-abcc-40614eec7370">
+      <ID>Transcript Fact - Student</ID>
+      <Name>Transcript Fact - Student</Name>
+      <DimensionID>Student</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="38712bbb-d3f7-45d3-91c8-b549fa16e185">
+          <AttributeID>Student ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6273960f-54a3-4fd0-91dd-e1380c23b2a8">
+          <AttributeID>Department Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2db1bc45-90be-47a3-8046-b1c12bd0f6de">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a8e7e7f6-316d-4258-a1e4-3467af1c4299">
+          <AttributeID>Surname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9e0ef7f8-4da2-41b3-96f6-c317d67beeae">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83ed6a9d-1bc2-438e-b2f3-a65336906af0">
+          <AttributeID>Phone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9441d336-59be-430f-b83c-fe576a23acfc">
+          <AttributeID>Email</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="32840c32-5891-46d7-8c25-b1fd76b65b6a">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="e9a8cd7d-e62a-4b06-b535-6921d7b56d25">
+      <ID>Transcript Fact - Course</ID>
+      <Name>Transcript Fact - Course</Name>
+      <DimensionID>Course</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="88f2dcd1-9b84-4615-9187-9cf0eb71c8d8">
+          <AttributeID>Course ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6dad3146-89f4-4de6-9824-afa08b62a4ed">
+          <AttributeID>Course Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="01c2228b-dce5-4307-8295-6e8947530dfa">
+          <AttributeID>Department Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="beefe783-40e5-4130-8c69-f56a06173ee6">
+          <AttributeID>Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="94791d58-2190-4f82-8a6e-52dca6b0ea48">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="59184352-3b57-4e40-b09b-5505f0ecd190">
+      <ID>Transcript Fact - Teacher</ID>
+      <Name>Transcript Fact - Teacher</Name>
+      <DimensionID>Teacher</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b495c539-1b8f-4be6-b142-21910a307cc5">
+          <AttributeID>Teacher ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="84a8e33e-da46-4b88-b1ea-642ec823b81a">
+          <AttributeID>Department Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e717e34d-2f71-479e-abfc-d7f3ec8531c4">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c07cfcec-7c12-4944-ae23-0d05dc3b031d">
+          <AttributeID>Surname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a4bb39b6-2650-4c39-a5e9-b343115270ce">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f55a12e7-944f-4348-bf32-aa1a478dbbb7">
+          <AttributeID>Phone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c16567b3-9435-4136-aeb5-ce6e357eb5dd">
+          <AttributeID>Email</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="efea8475-a056-4029-8f3d-9d52e4a9e62d">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="f3f04365-6c92-4861-a3a3-be2146903438">
+      <ID>Transcript Fact</ID>
+      <Name>Transcript Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="60c05b87-4df9-461b-8af1-5e8bcce3832a">
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <Source dwd:design-time-name="aaecb523-4e87-42d1-8f75-a61afa326da9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="750ba650-e754-4609-a13c-b57910734ee5">
+              <TableID>dbo_Transcript_fact</TableID>
+              <ColumnID>year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="03fa81d4-5c03-4ccd-9a40-d00e78da23e1">
+          <ID>Grade</ID>
+          <Name>Grade</Name>
+          <Source dwd:design-time-name="6227713f-0c1e-4ac8-9671-7cc26b88eded">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="550a3070-a427-4174-b29e-5d7e5726a676">
+              <TableID>dbo_Transcript_fact</TableID>
+              <ColumnID>grade</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a82ea3f5-e351-4980-be55-66c102dd4539">
+          <ID>Transcript Fact Count</ID>
+          <Name>Transcript Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5f36f4a5-288c-41dd-94e3-fa68a5e720ef">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="099650b9-1a2d-441c-a3c6-6adfa578f73e">
+              <TableID>dbo_Transcript_fact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="899f854d-e6a2-4ed1-92e9-e5d030eeb06c">
+          <CubeDimensionID>Transcript Fact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="afc373e4-e25a-4d70-bcd4-8059c33c88c2">
+              <AttributeID>Fact Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8ee6af55-e782-42fe-ac61-294d4dabb514">
+                  <DataType>WChar</DataType>
+                  <DataSize>21</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fc57c77b-9b36-4a59-851f-2b5559f03c9e">
+                    <TableID>dbo_Transcript_fact</TableID>
+                    <ColumnID>FactName</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4ae3675d-6503-4915-8999-bda2985aa75b">
+          <CubeDimensionID>Student</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="24eb10dc-3330-49e7-9d25-1ad4f40bab74">
+              <AttributeID>Student ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a9b8a2b2-63b0-4723-b8ab-1a1e5f2969d4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a56e5345-2eb4-48da-9cae-63632a278443">
+                    <TableID>dbo_Transcript_fact</TableID>
+                    <ColumnID>student_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0428ff7d-2b02-4077-911a-035b0eec4e49">
+          <CubeDimensionID>Course</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="de25ccda-2c02-433f-b34e-ef6f752d04ca">
+              <AttributeID>Course ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6497dbde-1c65-4307-b9f7-3fc0f294519e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a5a0b2aa-2a4d-4544-918a-5b2f364a5e1c">
+                    <TableID>dbo_Transcript_fact</TableID>
+                    <ColumnID>course_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4bae2c64-091c-4d9a-a33e-d83a305fc6c0">
+          <CubeDimensionID>Teacher</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7f104958-31af-4298-bc62-9b38f012005b">
+              <AttributeID>Teacher ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4796bae8-049a-403a-ae32-dc6305c7725b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="83a95614-39cd-4d4f-8af2-d49997440f17">
+                    <TableID>dbo_Transcript_fact</TableID>
+                    <ColumnID>teacher_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7f930508-4169-49a8-a9e1-6de049d406d2">
+          <CubeDimensionID>Transcript Fact - Student</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bb4e17ba-8fad-4ef8-af3a-337336386bb0">
+              <AttributeID>Student ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Transcript Fact</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Student ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="445d5e28-1851-4622-9bbd-0a687c5bc2ef">
+          <CubeDimensionID>Transcript Fact - Course</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d63c57ed-8aef-407d-ba0c-3302a9c2c096">
+              <AttributeID>Course ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Transcript Fact</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Course ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d7c6f5c3-2fa2-4761-94ae-dbe188393b1f">
+          <CubeDimensionID>Transcript Fact - Teacher</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8365a6f7-5ac4-4ca4-b94b-f7269fda2a9e">
+              <AttributeID>Teacher ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Transcript Fact</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Teacher ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="e8f896a8-99aa-48bc-ae0d-a89d1126af4b">
+    <DataSourceViewID>University Dwh</DataSourceViewID>
+  </Source>
+</Cube>
